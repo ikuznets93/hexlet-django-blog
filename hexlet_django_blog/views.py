@@ -5,7 +5,7 @@ from django.views import View
 
 class IndexView(View):
     def get(self, request, *args, **kwargs):
-        url = reverse('article', kwargs={'tags': 'python', 'article_id': 42})
+        url = reverse('articles')
         return redirect(url)
 
 def about(request):
